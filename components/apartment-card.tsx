@@ -20,6 +20,7 @@ type ApartmentCardProps = {
   apartment: Apartment;
 };
 
+// Tarjeta de catálogo reutilizable que resume una habitación y enlaza al detalle.
 export function ApartmentCard({ apartment }: ApartmentCardProps) {
   const totalPrice = apartment.pricePerNight * apartment.nights;
 
