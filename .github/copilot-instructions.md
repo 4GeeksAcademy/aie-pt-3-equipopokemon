@@ -24,3 +24,5 @@
 
 - [ ] Implementa la tarjeta de reserva: precio por noche, un contador de huéspedes (usa useState para aumentar o reducir el número de huéspedes dentro de un rango mín/máx) y un botón CTA.  
 
+## 5.1 — Reto opcional
+- [ ] Añade campos funcionales de fecha de entrada / salida con una librería de date picker y calcula el precio total en función del número de noches seleccionadas.
