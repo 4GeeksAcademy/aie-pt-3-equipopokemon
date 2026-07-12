@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Equipo Pokemon",
-  description: "Base Next.js 16 con TypeScript, Tailwind CSS y componentes reutilizables.",
+  title: "Airbnb UI Clone",
+  description: "Explorador de apartamentos con buscador y filtros inspirado en Airbnb.",
 };
 
 export default function RootLayout({

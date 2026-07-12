@@ -1,5 +1,5 @@
-import { HeroSection } from "@/components/hero-section";
+import { ApartmentExplorer } from "@/components/apartment-explorer";
 
 export default function Home() {
-  return <HeroSection />;
+  return <ApartmentExplorer />;
 }
