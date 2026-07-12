@@ -22,18 +22,18 @@ export type Apartment = {
   description: string;
   image: string;
   imageAlt: string;
-  photos: string[];
+  photos?: string[];
   nights: number;
   pricePerNight: number;
   rating: number;
   reviews: number;
   guests: number;
-  minGuests: number;
-  maxGuests: number;
+  minGuests?: number;
+  maxGuests?: number;
   type: ApartmentCategory;
   badge?: string;
-  host: ApartmentHost;
-  amenities: ApartmentAmenity[];
+  host?: ApartmentHost;
+  amenities?: ApartmentAmenity[];
 };
 
 export const apartmentCategories: ApartmentCategory[] = ["Playa", "Centro", "Montana", "Diseno"];

@@ -9,13 +9,13 @@ type ApartmentPhotoGalleryProps = {
 };
 
 // Galería controlada por props: recibe índice actual y handlers de navegación.
-export function ApartmentPhotoGallery({
+export const ApartmentPhotoGallery = ({
   photos,
   title,
   currentPhotoIndex,
   onPreviousPhoto,
   onNextPhoto,
-}: ApartmentPhotoGalleryProps) {
+}: ApartmentPhotoGalleryProps) => {
   const hasPhotos = photos.length > 0;
   const safeIndex = hasPhotos
     ? Math.min(Math.max(currentPhotoIndex, 0), photos.length - 1)
@@ -69,4 +69,4 @@ export function ApartmentPhotoGallery({
       </div>
     </section>
   );
-}
+};

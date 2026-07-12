@@ -8,18 +8,20 @@ import { ApartmentDetail } from "@/components/apartment-detail";
 
 // Entrada de la ruta /rooms/[id].
 // Se delega a un componente interno con key para reiniciar estados al cambiar el id.
-export default function RoomDetailsPage() {
+const RoomDetailsPage = () => {
   const params = useParams<{ id: string }>();
 
   return <RoomDetailsContent key={params.id} roomId={params.id} />;
-}
+};
+
+export default RoomDetailsPage;
 
 type RoomDetailsContentProps = {
   roomId: string;
 };
 
 // Orquesta la carga simulada por id y decide qué estado visual renderizar.
-function RoomDetailsContent({ roomId }: RoomDetailsContentProps) {
+const RoomDetailsContent = ({ roomId }: RoomDetailsContentProps) => {
   const [apartment, setApartment] = useState<Apartment | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -79,4 +81,4 @@ function RoomDetailsContent({ roomId }: RoomDetailsContentProps) {
 
   // Estado exitoso: renderiza la vista completa del detalle.
   return <ApartmentDetail apartment={apartment} />;
-}
+};
