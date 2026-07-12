@@ -8,7 +8,7 @@ type ApartmentPhotoGalleryProps = {
   onNextPhoto: () => void;
 };
 
-// Galería controlada por props: recibe índice actual y handlers de navegación.
+// Galeria controlada por props: renderiza la foto activa y delega la navegacion al padre.
 export const ApartmentPhotoGallery = ({
   photos,
   title,

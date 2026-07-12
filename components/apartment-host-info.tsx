@@ -4,6 +4,7 @@ type ApartmentHostInfoProps = {
   host: ApartmentHost;
 };
 
+// Muestra datos clave del anfitrion para reforzar confianza antes de reservar.
 export const ApartmentHostInfo = ({ host }: ApartmentHostInfoProps) => {
   return (
     <section className="flex items-center gap-4 border-b border-slate-100 pb-6">

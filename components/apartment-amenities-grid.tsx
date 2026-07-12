@@ -4,6 +4,7 @@ type ApartmentAmenitiesGridProps = {
   amenities: ApartmentAmenity[];
 };
 
+// Presenta los servicios disponibles en formato de grilla y maneja estado vacio.
 export const ApartmentAmenitiesGrid = ({ amenities }: ApartmentAmenitiesGridProps) => {
   return (
     <section className="space-y-4">

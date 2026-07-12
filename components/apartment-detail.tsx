@@ -23,7 +23,7 @@ export const ApartmentDetail = ({ apartment }: ApartmentDetailProps) => {
   const minGuests = apartment.minGuests ?? 1;
   const maxGuests = apartment.maxGuests ?? Math.max(minGuests, apartment.guests);
 
-  // Avanza a la foto anterior en modo circular.
+  // Mueve la galeria una posicion hacia atras y vuelve al final si ya esta en la primera foto.
   const handlePreviousPhoto = () => {
     if (photos.length === 0) return;
     setCurrentPhotoIndex((current) =>
@@ -31,7 +31,7 @@ export const ApartmentDetail = ({ apartment }: ApartmentDetailProps) => {
     );
   };
 
-  // Avanza a la foto siguiente en modo circular.
+  // Mueve la galeria una posicion hacia adelante y vuelve al inicio al llegar al final.
   const handleNextPhoto = () => {
     if (photos.length === 0) return;
     setCurrentPhotoIndex((current) =>

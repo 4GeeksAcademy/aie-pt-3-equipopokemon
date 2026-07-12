@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   description: "Explorador de apartamentos con buscador y filtros inspirado en Airbnb.",
 };
 
+// Layout global que inyecta tipografias, estructura base y metadatos compartidos.
 export default function RootLayout({
   children,
 }: Readonly<{

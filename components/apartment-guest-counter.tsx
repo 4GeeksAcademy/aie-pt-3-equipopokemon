@@ -6,6 +6,7 @@ type ApartmentGuestCounterProps = {
   onIncrease: () => void;
 };
 
+// Controla el numero de huespedes respetando limites minimos y maximos del alojamiento.
 export const ApartmentGuestCounter = ({
   guestsCount,
   minGuests,

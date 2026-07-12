@@ -3,6 +3,7 @@ type ApartmentReservationTotalProps = {
   nights: number;
 };
 
+// Resume el total estimado de la reserva en base al precio por noche y las noches elegidas.
 export const ApartmentReservationTotal = ({
   pricePerNight,
   nights,

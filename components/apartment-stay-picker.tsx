@@ -12,6 +12,7 @@ type StayInfo = {
   checkOut: Date | undefined;
 };
 
+// Calcula datos derivados del rango seleccionado para reutilizarlos en UI y total.
 export const getStayInfo = (stayRange: DateRange | undefined): StayInfo => {
   const checkIn = stayRange?.from;
   const checkOut = stayRange?.to;
@@ -20,6 +21,7 @@ export const getStayInfo = (stayRange: DateRange | undefined): StayInfo => {
   return { nights, checkIn, checkOut };
 };
 
+// Renderiza el calendario de entrada/salida y el resumen del rango elegido.
 export const ApartmentStayPicker = ({
   stayRange,
   onSelectRange,

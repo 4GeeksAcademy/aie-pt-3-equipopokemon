@@ -4,6 +4,7 @@ type ApartmentDetailBreadcrumbProps = {
   title: string;
 };
 
+// Muestra una ruta de navegacion simple para volver al catalogo desde el detalle.
 export const ApartmentDetailBreadcrumb = ({ title }: ApartmentDetailBreadcrumbProps) => {
   return (
     <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-slate-600">

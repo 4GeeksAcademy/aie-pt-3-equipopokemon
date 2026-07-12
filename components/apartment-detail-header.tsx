@@ -4,6 +4,7 @@ type ApartmentDetailHeaderProps = {
   apartment: Apartment;
 };
 
+// Renderiza el bloque principal del alojamiento con titulo, rating, resenas y ubicacion.
 export const ApartmentDetailHeader = ({ apartment }: ApartmentDetailHeaderProps) => {
   return (
     <header className="space-y-3 border-b border-slate-100 pb-6">

@@ -12,7 +12,7 @@ type ApartmentReservationCardProps = {
   maxGuests: number;
 };
 
-// Tarjeta lateral de reserva con control de huéspedes y CTA principal.
+// Orquesta la experiencia de reserva: huespedes, fechas, total y accion final.
 export const ApartmentReservationCard = ({
   pricePerNight,
   minGuests,
