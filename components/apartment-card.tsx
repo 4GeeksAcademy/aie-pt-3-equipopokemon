@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type Apartment = {
   id: number;
@@ -20,6 +21,7 @@ type ApartmentCardProps = {
   apartment: Apartment;
 };
 
+// Tarjeta de catálogo reutilizable que resume una habitación y enlaza al detalle.
 export function ApartmentCard({ apartment }: ApartmentCardProps) {
   const totalPrice = apartment.pricePerNight * apartment.nights;
 
@@ -70,9 +72,12 @@ export function ApartmentCard({ apartment }: ApartmentCardProps) {
             <p className="text-lg font-semibold text-slate-950">{apartment.pricePerNight}€ / noche</p>
             <p className="text-sm text-slate-500">Total estimado {totalPrice}€</p>
           </div>
-          <button className="rounded-full bg-slate-950 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800">
+          <Link
+            href={`/rooms/${apartment.id}`}
+            className="rounded-full bg-slate-950 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
+          >
             Ver detalle
-          </button>
+          </Link>
         </div>
       </div>
     </article>
